@@ -1,0 +1,135 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: table-cell;
+    vertical-align: middle;
+
+    font-family: 'Outfit', sans-serif;
+}
+
+.carta {
+    background-color: hsl(216, 50%, 16%);
+    width: 300px;
+    border-radius: 18px;
+    padding: 26px;
+    margin: 18px;
+}
+
+.imagem-principal {
+    position: relative;
+}
+
+.img-nft {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.revelar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.revelar img {
+    opacity: 0;
+}
+
+.revelar:hover {
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    background-color: hsla(178, 100%, 50%, 0.6);
+}
+
+.revelar:hover img {
+    opacity: 1;
+    transition: .4s ease-in-out;
+}
+
+.nome-nft {
+    color: white;
+    font-size: 24px;
+    margin: 24px 0;
+    font-weight: 600;
+    width: max-content;
+}
+
+.nome-nft:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.descricao-nft {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.info-texto{
+    margin: 24px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-valor {
+    display: flex;
+    gap: 6px;
+    font-size: 18px;
+    align-items: center;
+}
+
+.valor {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.tempo {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+}
+
+.criador {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 16px 0 0 0;
+    gap: 16px;
+    border-top: 2px solid hsla(215, 22%, 45%, 0.21);
+    font-weight: 300;
+}
+
+.img-criador {
+    width: 36px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.criador p {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+}
+
+.criador a {
+    text-decoration: none;
+    color: white;
+}
+
+.criador a:hover {
+    color: hsl(178, 100%, 50%);;
+}
